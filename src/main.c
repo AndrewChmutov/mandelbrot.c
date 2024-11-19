@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "safety_functions.h"
-#include "bmp.h"
+
+#include <bmp.h>
+#include <utils.h>
 
 
 int main(int argc, char **argv) {

@@ -1,5 +1,4 @@
-#include "mandelbrot_functions.h"
-
+#include <mandelbrot.h>
 
 double mapFunction (int value, int length, double min, double max) {
     return value * (max - min) / (length) + min;

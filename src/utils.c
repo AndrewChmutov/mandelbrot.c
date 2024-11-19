@@ -1,9 +1,9 @@
-#include "safety_functions.h"
 #include <string.h>
 #include <sys/stat.h>
 
+#include <utils.h>
 
-short isInt(const char const *str) {
+short isInt(const char *str) {
     int n = strlen(str);
 
     for (int i = 0; i < n; i++) {
@@ -16,7 +16,7 @@ short isInt(const char const *str) {
 }
 
 
-short pathExists(const char const *path) {
+short pathExists(const char *path) {
     struct stat stats;
     stat(path, &stats);
 

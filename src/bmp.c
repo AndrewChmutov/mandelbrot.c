@@ -1,7 +1,8 @@
-#include "bmp.h"
 #include <stdio.h>
 #include <string.h>
-#include "mandelbrot_functions.h"
+
+#include <bmp.h>
+#include <mandelbrot.h>
 
 void fillHeaders(FILE *file, int width, int height) {
     uint8_t buf[4];
